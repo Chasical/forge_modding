@@ -1,5 +1,6 @@
 package net.chasical.modcourse;
 
+import net.chasical.modcourse.block.ModBlocks;
 import net.chasical.modcourse.item.ModItems;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
@@ -31,6 +32,7 @@ public class ModCourse
         IEventBus eventBus = FMLJavaModLoadingContext.get().getModEventBus();
 
         ModItems.register(eventBus);
+        ModBlocks.register(eventBus);
 
         eventBus.addListener(this::setup);
 
