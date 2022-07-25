@@ -13,7 +13,7 @@ public class ModItems {
             DeferredRegister.create(ForgeRegistries.ITEMS, ModCourse.MOD_ID);
 
     public static final RegistryObject<Item> RANDOM_ITEM = ITEMS.register("random_item",
-            () -> new Item(new Item.Properties().tab(CreativeModeTab.TAB_MISC)));
+            () -> new Item(new Item.Properties().tab(ModCreativeTab.COURSE_TAB)));
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);
